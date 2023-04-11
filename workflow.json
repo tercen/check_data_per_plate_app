@@ -1,9 +1,9 @@
 {
   "kind": "Workflow",
-  "id": "0e19b61311c69fe34f479b830bfefc3e",
+  "id": "d4bc5f0172b78738836a64b1ba719905",
   "isDeleted": false,
-  "rev": "2-13b7240279c03c3c2b636e04bacd2b45",
-  "description": "Checks whether every well has 0 or 1 measurements.",
+  "rev": "85-336b6396780fadadc69ff2b59bd2e10d",
+  "description": "Checks if each well in a group has 0 or 1 data points and flags those that have more.",
   "name": "check_data_per_plate_app",
   "createdBy": "myrto.kostadima",
   "acl": {
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2023-04-11T21:03:02.929494Z"
+    "value": "2023-03-24T13:59:00.060713Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2023-04-11T21:03:03.185832Z"
+    "value": "2023-04-11T21:54:16.384950Z"
   },
   "urls": [],
   "tags": [],
@@ -29,7 +29,7 @@
   "version": "",
   "authors": [],
   "isPublic": false,
-  "projectId": "7c463933edba731b0b4df14b0cb704b8",
+  "projectId": "6ab4fa9ce7cf4eb188b1fba16a2f5e26",
   "folderId": "",
   "links": [
     {
@@ -76,14 +76,14 @@
     },
     {
       "kind": "Link",
-      "id": "fb8f5738-bcd8-4ea7-b964-4101eccf47d6",
+      "id": "db2bfc19-68aa-4865-a7d6-e4d11f05cb4d",
       "inputId": "48186e7e-3a8f-4f4c-99fc-5896f083a31b-i-0",
-      "outputId": "18021792-07d1-4908-9f41-a6e5c4025279-o-0"
+      "outputId": "6eec911e-e46e-4bfa-a0bf-86cd62dcb263-o-0"
     },
     {
       "kind": "Link",
-      "id": "2d9b1111-abd7-489f-be92-e44caacaed94",
-      "inputId": "18021792-07d1-4908-9f41-a6e5c4025279-i-0",
+      "id": "445b0c03-c78a-430a-a014-2a5dfac7959c",
+      "inputId": "6eec911e-e46e-4bfa-a0bf-86cd62dcb263-i-0",
       "outputId": "334f2b32-ed6b-4fad-b16a-24940799f2aa-o-0"
     }
   ],
@@ -369,7 +369,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "aae5e3fa-03f1-4aca-a45a-9f473f3ac743"
+        "id": "73f56ca7-84be-4272-ab32-7319390d9888"
       }
     },
     {
@@ -653,7 +653,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3055b9f0-b753-45cb-ac71-08fc0fe97217"
+        "id": "837c5758-3413-41b2-9938-b0c5663ae54c"
       }
     },
     {
@@ -963,7 +963,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b743b80b-f6ca-4fd0-a329-fab378c2907e"
+        "id": "ec35a10a-4795-47f7-8a35-e9603b75c0e7"
       }
     },
     {
@@ -1304,7 +1304,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "08ffc095-ac2e-48dc-8a00-4484cec6fabc"
+        "id": "14d66a4d-3846-4ad3-8c77-19bf2cbf2529"
       }
     },
     {
@@ -1509,7 +1509,7 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 10
+          "nRows": 1
         },
         "filters": {
           "kind": "Filters",
@@ -1582,13 +1582,13 @@
             }
           ],
           "rectangleSelections": [],
-          "nRows": 10
+          "nRows": 1
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3f985fe2-3119-4b1f-accf-a1932236ef93"
+        "id": "76a49ce7-fe1d-4bb4-81e6-ea27e3894706"
       }
     },
     {
@@ -1859,7 +1859,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 357.0,
+          "cellSize": 56.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1882,16 +1882,37 @@
                   "y": 0.0
                 }
               }
+            },
+            {
+              "kind": "GraphicalFactor",
+              "factor": {
+                "kind": "Factor",
+                "name": "count..Variable",
+                "type": "string"
+              },
+              "rectangle": {
+                "kind": "Rectangle",
+                "extent": {
+                  "kind": "Point",
+                  "x": 150.0,
+                  "y": 30.0
+                },
+                "topLeft": {
+                  "kind": "Point",
+                  "x": 0.0,
+                  "y": 0.0
+                }
+              }
             }
           ],
           "rectangleSelections": [],
-          "nRows": 1
+          "nRows": 10
         },
         "taskId": ""
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "8c0106a8-3efb-41aa-aef8-5ee0552d696f"
+        "id": "0c597bd6-05d7-486c-9639-7234a3af852d"
       }
     },
     {
@@ -1978,13 +1999,13 @@
     },
     {
       "kind": "WizardStep",
-      "id": "18021792-07d1-4908-9f41-a6e5c4025279",
+      "id": "6eec911e-e46e-4bfa-a0bf-86cd62dcb263",
       "groupId": "",
       "name": "Wizard",
       "inputs": [
         {
           "kind": "InputPort",
-          "id": "18021792-07d1-4908-9f41-a6e5c4025279-i-0",
+          "id": "6eec911e-e46e-4bfa-a0bf-86cd62dcb263-i-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -1992,7 +2013,7 @@
       "outputs": [
         {
           "kind": "OutputPort",
-          "id": "18021792-07d1-4908-9f41-a6e5c4025279-o-0",
+          "id": "6eec911e-e46e-4bfa-a0bf-86cd62dcb263-o-0",
           "linkType": "relation",
           "name": "table"
         }
@@ -2006,8 +2027,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 305.88596130371116,
-          "y": 185.5
+          "x": 305.8859613037109,
+          "y": 189.5
         }
       },
       "state": {
@@ -2021,7 +2042,7 @@
         "kind": "WizardStepModel",
         "namespace": "qc_well",
         "description": "",
-        "appDesignType": "check_data_per_plate.c4_groups",
+        "appDesignType": "check_data_per_plate_app.c04_groups",
         "factors": [
           {
             "kind": "MappingFactor",
